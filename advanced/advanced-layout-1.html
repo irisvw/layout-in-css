@@ -6,7 +6,24 @@
     <title>Advanced Layout 1</title>
     <link rel="stylesheet" href="../style.css">
     <style>
-      /* Doe hier jouw ding! */
+      body {
+        column-count: 4;
+        row-gap: 1em;
+
+        
+        * {
+          break-inside: avoid;
+        }
+      }
+
+      header, nav, section, footer {
+        height: 20em;
+        margin-bottom: 1em;
+      }
+
+      section:nth-child(4n) {
+        height: 30em;
+      }
     </style>
   </head>
   <body id="advanced-layout-1">
