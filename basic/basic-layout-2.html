@@ -6,7 +6,23 @@
     <title>Basic Layout 2</title>
     <link rel="stylesheet" href="../style.css">
     <style>
-      /* Doe hier jouw ding! */
+      body {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+      }
+
+      nav, footer {
+        min-height: 6em;
+      }
+
+      header {
+        min-height: 12em;
+      }
+
+      main {
+        min-height: 30em;
+      }
     </style>
   </head>
   <body id="basic-layout-2">
