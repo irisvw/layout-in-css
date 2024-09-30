@@ -6,7 +6,21 @@
     <title>Basic Layout 5</title>
     <link rel="stylesheet" href="../style.css">
     <style>
-      /* Doe hier jouw ding! */
+      body {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        align-items: flex-end;
+      }
+
+      header, nav, main, footer {
+        height: 15em;
+        width: 80%;
+      }
+
+      nav {
+        align-self: flex-start;
+      }
     </style>
   </head>
   <body id="basic-layout-5">
