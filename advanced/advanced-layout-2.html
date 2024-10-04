@@ -6,7 +6,31 @@
     <title>Advanced Layout 2</title>
     <link rel="stylesheet" href="../style.css">
     <style>
-      /* Doe hier jouw ding! */
+      body {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        gap: 1em;
+        max-width: 50vw;
+        margin: auto;
+      }
+
+      header, nav {
+        box-sizing: border-box;
+      }
+
+      header {
+        transform:
+          translateY(150px)
+          rotate(-30deg);
+          
+      }
+
+      nav {
+        transform:
+          translateY(-100px)
+          rotate(30deg);
+      }
     </style>
   </head>
   <body id="advanced-layout-2">
